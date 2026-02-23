@@ -6,3 +6,4 @@ player_form = 0;
 // 1 = branco
 
 can_move = true;
+vida_player = 10;

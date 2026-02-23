@@ -1,21 +1,35 @@
-// =====================================
+
+
+
 // 1. INPUT
-// =====================================
 if (keyboard_check_pressed(ord("Z")))
 {
     player_form = 1 - player_form;
 }
 
-// =====================================
+// TIRO
+if (keyboard_check_pressed(ord("E")))
+{
+    var _dir = (image_xscale == 1) ? 0 : 180;
+    var _off = 12;
+
+    var _bx = x + lengthdir_x(_off, _dir);
+    var _by = y + lengthdir_y(_off, _dir);
+
+    var _b = instance_create_layer(_bx, _by, "Instances_1", obj_proj);
+
+    _b.dir = _dir;
+    _b.proj_form = global.world;
+
+    with (_b) event_user(0);
+}
+
 // 2. LÓGICA DE MOVIMENTO (sem sprite aqui!)
-// =====================================
 
 // exemplo de leitura
 var move = keyboard_check(vk_left) - keyboard_check(vk_right);
 
-// =====================================
 // 3. COMPATIBILIDADE
-// =====================================
 can_move = (player_form == global.world);
 
 if (!can_move)
@@ -24,9 +38,11 @@ if (!can_move)
     vspeed = 0;
 }
 
-// =====================================
+
+
+
+
 // 4. MOVIMENTO (só se puder)
-// =====================================
 if (can_move)
 {
     var _right		= keyboard_check(ord("A"));
@@ -50,9 +66,7 @@ if (can_move)
 	}
 }
 
-// =====================================
 //  5. DEFINIÇÃO FINAL DA SPRITE (ÚNICO LUGAR)
-// =====================================
 if (player_form == 0){
 	sprite_index = spr_noct;
 }else{
@@ -61,3 +75,5 @@ if (player_form == 0){
 
 
 var moving = abs(hspeed) > 0.1;
+
+if (vida_player ==0){game_restart();}
