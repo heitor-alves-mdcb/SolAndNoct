@@ -7,3 +7,5 @@ player_form = 0;
 
 can_move = true;
 vida_player = 10;
+
+

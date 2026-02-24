@@ -3,3 +3,4 @@ global.world = 0;
 // 1 = mundo claro
 
 switch_timer = room_speed * 5; // troca a cada 5 segundos
+

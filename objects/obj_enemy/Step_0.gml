@@ -1,3 +1,7 @@
+
+
+
+
 if (instance_exists(obj_noct)) {
     var _dist = point_distance(x, y, obj_noct.x, obj_noct.y);
 

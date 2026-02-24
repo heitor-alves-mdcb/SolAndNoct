@@ -1,3 +1,8 @@
+if (place_meeting(x, y, obj_troca_layer)) {
+    var _layer_id = layer_get_id("Instances_1");
+    layer = _layer_id;
+}
+
 
 
 
