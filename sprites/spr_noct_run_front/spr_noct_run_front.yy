@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"noct",
-    "path":"folders/Sprites/noct.yy",
+    "path":"folders/Sprites/player/noct.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

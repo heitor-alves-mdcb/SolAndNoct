@@ -20,6 +20,13 @@ if (instance_exists(obj_noct)) {
             var _dir = point_direction(x, y, obj_noct.x, obj_noct.y);
             x += lengthdir_x(v_velocidade, _dir);
             y += lengthdir_y(v_velocidade, _dir);
+			
+			// --- Lógica de Virar o Lado ---
+			if (obj_noct.x > x) {
+			image_xscale = 1;  // Jogador está na direita, olha para a direita
+			} else {
+			   image_xscale = -1; // Jogador está na esquerda, olha para a esquerda
+			}
 
             // Condição para Atacar
             if (_dist <= distancia_ataque && pode_atacar) {

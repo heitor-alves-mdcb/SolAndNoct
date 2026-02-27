@@ -13,3 +13,4 @@ if (switch_timer <= 0)
         event_user(0); // evento customizado
     }
 }
+

@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"cultist",
+    "path":"folders/Sprites/enemies/cultist.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

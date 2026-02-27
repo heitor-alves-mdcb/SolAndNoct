@@ -8,8 +8,8 @@
   "name":"obj_sensor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"invisible",
+    "path":"folders/Objects/invisible.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -40,5 +40,5 @@
     "path":"sprites/spr_sensor/spr_sensor.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
