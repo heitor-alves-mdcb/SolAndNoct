@@ -1,16 +1,20 @@
-// Alvo
+// ===== ALVO =====
 target = obj_noct;
 
-// Movimento
-bspd = 1.2;
+// ===== MOVIMENTO =====
+spd = 1.2;
 
-// Vida
+// ===== VIDA =====
 hp = 20;
 
-// Ataque
+// ===== ATAQUE CORPO A CORPO =====
 attack_range = 32;
 attack_cooldown = 90;
 attack_timer = 0;
 
-// Estado
+// ===== ATAQUE À DISTÂNCIA =====
+special_chance = 50;
+ranged_range = 200;
+
+// ===== ESTADO =====
 state = "chase";

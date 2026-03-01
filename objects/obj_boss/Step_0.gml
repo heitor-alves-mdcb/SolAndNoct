@@ -1,39 +1,62 @@
-// Se player não existe, para
+// se player não existir, para
 if (!instance_exists(target)) exit;
 
-// Distância até o player
+// distância e direção
 var dist = point_distance(x, y, target.x, target.y);
+var dir  = point_direction(x, y, target.x, target.y);
 
-// Cooldown do ataque
+// reduz cooldown
 if (attack_timer > 0) attack_timer--;
 
-// ===== ESTADOS =====
+// =========================
+// MACHINE STATE
+// =========================
 switch (state)
 {
     case "chase":
     {
-        // Movimento em direção ao player
-        var dir = point_direction(x, y, target.x, target.y);
-        
-        x += lengthdir_x(bspd, dir);
-        y += lengthdir_y(bspd, dir);
-        
-        // Se estiver perto, atacar
-        if (dist <= attack_range && attack_timer <= 0)
+        // movimento em direção ao player
+        x += lengthdir_x(spd, dir);
+        y += lengthdir_y(spd, dir);
+
+        // hora de atacar?
+        if (attack_timer <= 0)
         {
-            state = "attack";
+            if (dist <= attack_range)
+            {
+                escolher_ataque(id);
+            }
+            else if (dist <= ranged_range)
+            {
+                escolher_ataque(id);
+            }
         }
     }
     break;
-    
+
     case "attack":
     {
-        // Executa ataque
-        atacar();
-        
+        atacar(id);
         attack_timer = attack_cooldown;
         state = "chase";
     }
     break;
+
+    case "attack_ranged":
+    {
+		show_debug_message("ATAQUE RANGED DISPAROU");
+        atacar_distancia(id);
+        attack_timer = attack_cooldown + 30; // especial mais lento
+        state = "chase";
+    }
+    break;
 }
-if (hp == 0) instance_destroy();
+
+// ===== DANO POR CONTATO =====
+if (place_meeting(x, y, target))
+{
+    with (target)
+    {
+        vida_player -= 1;
+    }
+}

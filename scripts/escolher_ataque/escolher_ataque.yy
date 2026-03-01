@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"escolher_ataque",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"escolher_ataque",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

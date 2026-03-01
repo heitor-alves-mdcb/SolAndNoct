@@ -1,9 +1,12 @@
-
-function atacar(){
-if (point_distance(x, y, target.x, target.y) <= attack_range)
+function atacar(_boss)
 {
-    with (target)
+    if (!instance_exists(_boss.target)) exit;
+
+    if (point_distance(_boss.x, _boss.y, _boss.target.x, _boss.target.y) <= _boss.attack_range)
     {
-        vida_player -= 1; // dano
+        with (_boss.target)
+        {
+            hp -= 1;
+        }
     }
-}}
+}
