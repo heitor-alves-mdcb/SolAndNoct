@@ -5,7 +5,7 @@ target = obj_noct;
 spd = 1.5;
 
 // ===== VIDA =====
-hp = 30;
+hp = 20;
 
 // ===== ATAQUE CORPO A CORPO =====
 attack_range = 32;

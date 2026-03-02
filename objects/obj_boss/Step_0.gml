@@ -60,3 +60,9 @@ if (place_meeting(x, y, target))
         vida_player -= 1;
     }
 }
+
+// Verifica se ele se moveu para a direita ou esquerda neste frame
+if (x != xprevious) { 
+    // Se a posição atual for maior que a anterior, ele foi para a direita
+    image_xscale = (x > xprevious) ? 1 : -1;
+}
