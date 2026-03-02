@@ -2,18 +2,18 @@
 target = obj_noct;
 
 // ===== MOVIMENTO =====
-spd = 1.2;
+spd = 1.5;
 
 // ===== VIDA =====
-hp = 20;
+hp = 30;
 
 // ===== ATAQUE CORPO A CORPO =====
 attack_range = 32;
-attack_cooldown = 90;
+attack_cooldown = 20;
 attack_timer = 0;
 
 // ===== ATAQUE À DISTÂNCIA =====
-special_chance = 50;
+special_chance = 100;
 ranged_range = 200;
 
 // ===== ESTADO =====

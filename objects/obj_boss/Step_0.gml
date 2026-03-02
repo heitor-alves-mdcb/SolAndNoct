@@ -46,7 +46,7 @@ switch (state)
     {
 		show_debug_message("ATAQUE RANGED DISPAROU");
         atacar_distancia(id);
-        attack_timer = attack_cooldown + 30; // especial mais lento
+        attack_timer = attack_cooldown; // especial mais lento
         state = "chase";
     }
     break;

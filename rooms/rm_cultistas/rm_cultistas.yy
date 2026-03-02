@@ -21,7 +21,7 @@
     {"name":"inst_10516E67","path":"rooms/rm_cultistas/rm_cultistas.yy",},
     {"name":"inst_CDF92EC","path":"rooms/rm_cultistas/rm_cultistas.yy",},
     {"name":"inst_1012FC10","path":"rooms/rm_cultistas/rm_cultistas.yy",},
-    {"name":"inst_3438CE5","path":"rooms/rm_cultistas/rm_cultistas.yy",},
+    {"name":"inst_54D0A33C","path":"rooms/rm_cultistas/rm_cultistas.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -55,7 +55,7 @@
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_79C6BD21","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_79C6BD21","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_ritual","path":"sprites/spr_ritual/spr_ritual.yy",},"x":87.0,"y":338.0,},
       ],"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Assets_1","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances_2","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_3438CE5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3438CE5","objectId":{"name":"obj_fundo","path":"objects/obj_fundo/obj_fundo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":6.0,"x":0.0,"y":0.0,},
+        {"$GMRInstance":"v4","%Name":"inst_54D0A33C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_54D0A33C","objectId":{"name":"obj_fundo","path":"objects/obj_fundo/obj_fundo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":6.0,"x":320.0,"y":192.0,},
       ],"layers":[],"name":"Instances_2","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
   ],
   "name":"rm_cultistas",
